@@ -7,24 +7,26 @@ Survey by the [HiGGS](https://github.com/wevbarker/HiGGS) package of Poisson bra
 See [HiGGS README.md](https://github.com/wevbarker/HiGGS/README.md) and references therein for
 
 ## Installation
-1. Make sure you have [installed xAct](http://www.xact.es/download.html).
-2. Download HiGGS:
+1. Make sure you have [installed HiGGS](https://github.com/wevbarker/HiGGS).
+2. Download the survey: 
 	```bash, git
 	git clone https://github.com/wevbarker/HiGGS-calibration-survey
-	cd HiGGS
+	cd HiGGS-calibration-survey
 	tar -xzvf svy.tar.gz
 	```
-3. Place the `./svy` directory in the working directory of your Mathematica notebook
+3. Place the `./svy` directory in the working directory of your Mathematica notebook.
 
 ## Quickstart 
 
-The package loads just like any other part of xAct, just open a fresh notebook and run:
+The theory files `./svy/simple_spin_*.thr.mx` contain all the physics. Everything under `./svy/node-*` pertains to clocking.
+
+Open a fresh notebook in the same directory as `svy` and run:
 ```wolfram
 $Path~AppendTo~NotebookDirectory[];
 Needs["xAct`HiGGS`"];
 BuildHiGGS[];
 ```
-This loads the package (i.e. the names of the functions provided), along with its dependencies in the xAct bundle. However it does _not_ load the physics. To construct the HiGGS environment, one must run:
+You should end up in a HiGGS environment. To view the constraint and bracket structure of a given theory, try
 ```wolfram
 ViewTheory["simple_spin_1p_","Literature"->True,"PPM"->True,"Velocities"->False];
 ```
