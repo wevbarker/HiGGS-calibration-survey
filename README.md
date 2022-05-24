@@ -20,6 +20,8 @@ See [HiGGS README.md](https://github.com/wevbarker/HiGGS/README.md) and referenc
 
 The theory files `./svy/simple_spin_*.thr.mx` contain all the physics. Everything under `./svy/node-*` pertains to clocking.
 
+The `.thr.mx` theory files use a conventions in which _vanishing_ multiplier couplings (`A` for "alpha" couplings and `B` for "beta" couplings) are appended to the file name, but only if they are not constrained by default.
+
 Open a fresh notebook in the same directory as `svy` and run:
 ```wolfram
 $Path~AppendTo~NotebookDirectory[];
