@@ -28,7 +28,7 @@ $Path~AppendTo~NotebookDirectory[];
 Needs["xAct`HiGGS`"];
 BuildHiGGS[];
 ```
-You should end up in a HiGGS environment. To view the constraint and bracket structure of a given theory, such as the minimal spin-parity 1^+ case with all (surveyed) multipliers active, try
+You should end up in a HiGGS environment. To view the constraint and bracket structure of a given theory, such as the minimal spin-parity 1<sup>+</sup> case with all (surveyed) multipliers active, try
 ```wolfram
 ViewTheory["simple_spin_1p_","Literature"->True,"PPM"->True,"Velocities"->False];
 ```
